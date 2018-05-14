@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ripple xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:color="#33000000"
-    android:radius="50dp"
-    tools:targetApi="lollipop">
-    <item>
-        <shape android:shape="oval">
-            <solid android:color="@color/chinese_silver" />
-        </shape>
-    </item>
-</ripple>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:state_pressed="true"
+        android:drawable="@drawable/bg_user_item_state_pressed" />
+
+    <item
+        android:drawable="@drawable/bg_user_item_state_normal"/>
+
+</selector>
